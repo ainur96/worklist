@@ -11,6 +11,25 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'qwer',
         ],
+		/* Настроека memcached
+				 'cache' => [
+					'class' => 'yii\caching\MemCache',
+					'servers' => [
+						[
+							'host' => 'server1',
+							'port' => 11211,
+							'weight' => 60,
+						],
+						[
+							'host' => 'server2',
+							'port' => 11211,
+							'weight' => 40,
+						],
+					],
+				],
+			],
+		
+		*/
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],

@@ -35,3 +35,20 @@ ALTER TABLE `worklist`
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
+для добавления кеширования убать комментарии с файла config/web.php
+'cache' => [
+					'class' => 'yii\caching\MemCache',
+					'servers' => [
+						[
+							'host' => 'server1',
+							'port' => 11211,
+							'weight' => 60,
+						],
+						[
+							'host' => 'server2',
+							'port' => 11211,
+							'weight' => 40,
+						],
+					],
+				],
+			],
